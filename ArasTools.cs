@@ -122,7 +122,7 @@ namespace MasToAras
         }
         public Item addPartToBom(MasterStructure lineItem) {
             // Ted has added a revision level of 999 for the moat master configuration.
-            // i dont know HTF MAS allows him to do that, but oh well... just ignore it
+            // i dont know MAS allows him to do that, but oh well... just ignore it
             // he has also added 0 quantity items that are essentially work instructions
             if (lineItem.parentRevision != 999 || lineItem.bomQuantity != 0)
             {

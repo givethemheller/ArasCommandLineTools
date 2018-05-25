@@ -110,7 +110,7 @@ namespace MasToAras.Structures
             List<MasterStructure> returnList = new List<MasterStructure>();
             
             foreach (StdBomStructures thePart in theList) {
-                // items of type 4 are shitty comments. leave them alone
+                // items of type 4 are comments that hsouldnt be in the system. leave them alone
                 //if (thePart.ItemType != 4) {
                     MasterStructure theAddingObj = new MasterStructure();
                     theAddingObj.parentPart = thePart.BillNo;
